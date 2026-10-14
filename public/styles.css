@@ -1,0 +1,23 @@
+body {
+    color: white;
+    font-family: cursive;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type='text'] {
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+a {
+    color: royalblue;
+}
