@@ -22,9 +22,7 @@ app.get('/', (req, res) => {
 // Get a joke from the Joke API
 app.get('/api/joke', async (req, res) => {
     try {
-        const response = await fetch(
-            'https://official-joke-api.appspot.com/random_joke'
-        );
+        const response = await fetch(process.env.JOKE_API_URL);
 
         if (!response.ok) {
             throw new Error(`Joke API returned status ${response.status}`);
